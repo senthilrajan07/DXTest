@@ -28,6 +28,11 @@
             "package": "core",
             "versionName": "Version 1.0.0",
             "versionNumber": "1.0.0.0"
+            "dependencies": [
+                {
+                    "package":"LWCRecipes"
+                }  
+            ]
         },
         {
             "path": "./src-ui",
@@ -73,7 +78,7 @@
     "sfdcLoginUrl": "https://login.salesforce.com",
     "sourceApiVersion": "52.0",
     "packageAliases": {
-        "LWCRecipes@52.0.0-4": "04t3t000002sBACAA2"
+        "LWCRecipes": "04t3t000002sBACAA2"
     },
     "plugins": {
     }
