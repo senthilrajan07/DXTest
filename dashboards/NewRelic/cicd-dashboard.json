@@ -22,7 +22,7 @@
             "dataFormatters": [],
             "nrqlQueries": [
               {
-                   "accountId": <your-account-id>,
+                   "accountId": 4328019,
                 "query": "SELECT  percentile(sfpowerscripts.prepare.duration,95)/1000/60  AS 'Mins' FROM Metric SINCE this quarter"
               }
             ],
@@ -54,7 +54,7 @@
             "dataFormatters": [],
             "nrqlQueries": [
               {
-                   "accountId": <your-account-id>,
+                   "accountId": 4328019,
                 "query": "SELECT average(sfpowerscripts.validate.duration)/1000/60 AS 'Mins' FROM Metric SINCE this quarter"
               }
             ],
@@ -86,7 +86,7 @@
             "dataFormatters": [],
             "nrqlQueries": [
               {
-                   "accountId": <your-account-id>,
+                   "accountId": 4328019,
                 "query": "SELECT sum(sfpowerscripts.build.scheduled) AS 'Builds' FROM Metric WHERE stage ='build' SINCE  last quarter"
               }
             ],
@@ -109,7 +109,7 @@
             "dataFormatters": [],
             "nrqlQueries": [
               {
-                   "accountId": <your-account-id>,
+                   "accountId": 4328019,
                 "query": "SELECT sum(sfpowerscripts.release.scheduled) AS 'Releases' FROM Metric SINCE this quarter"
               }
             ],
@@ -132,7 +132,7 @@
             "dataFormatters": [],
             "nrqlQueries": [
               {
-                   "accountId": <your-account-id>,
+                   "accountId": 4328019,
                 "query": "SELECT sum(sfpowerscripts.validate.succeeded)+sum(sfpowerscripts.validate.failed) AS 'RUNS' FROM Metric SINCE this quarter"
               }
             ],
@@ -155,7 +155,7 @@
             "dataFormatters": [],
             "nrqlQueries": [
               {
-                   "accountId": <your-account-id>,
+                   "accountId": 4328019,
                 "query": "SELECT average(sfpowerscripts.build.duration)/1000/60 AS 'Mins' FROM Metric WHERE  is_diffcheck_enabled='true'AND stage='build' SINCE this quarter"
               }
             ],
@@ -187,7 +187,7 @@
             "dataFormatters": [],
             "nrqlQueries": [
               {
-                   "accountId": <your-account-id>,
+                   "accountId": 4328019,
                 "query": "SELECT average(sfpowerscripts.release.duration)/1000/60 AS 'Mins' FROM Metric  SINCE this quarter"
               }
             ],
@@ -219,7 +219,7 @@
             "dataFormatters": [],
             "nrqlQueries": [
               {
-                   "accountId": <your-account-id>,
+                   "accountId": 4328019,
                 "query": "SELECT ((sum(`sfpowerscripts.validate.succeeded`))/((sum(`sfpowerscripts.validate.succeeded`)+sum(`sfpowerscripts.validate.failed`))))*100 AS '%' FROM Metric SINCE this quarter"
               }
             ],
@@ -251,7 +251,7 @@
             "dataFormatters": [],
             "nrqlQueries": [
               {
-                   "accountId": <your-account-id>,
+                   "accountId": 4328019,
                 "query": "SELECT ((sum(`sfpowerscripts.build.succeeded`))/sum(`sfpowerscripts.build.scheduled`))*100 AS '%' FROM  Metric  SINCE this quarter"
               }
             ],
@@ -274,7 +274,7 @@
             "dataFormatters": [],
             "nrqlQueries": [
               {
-                   "accountId": <your-account-id>,
+                   "accountId": 4328019,
                 "query": "SELECT ((sum(`sfpowerscripts.release.succeeded`))/sum(`sfpowerscripts.release.scheduled`))*100 AS '%' FROM Metric SINCE this quarter"
               }
             ],
@@ -312,7 +312,7 @@
             "dataFormatters": [],
             "nrqlQueries": [
               {
-                   "accountId": <your-account-id>,
+                   "accountId": 4328019,
                 "query": "SELECT average(sfpowerscripts.build.duration)/1000/60 AS 'Mins' FROM Metric  WHERE stage='quickbuild' AND is_diffcheck_enabled='true' SINCE this quarter"
               }
             ],
@@ -335,7 +335,7 @@
             "dataFormatters": [],
             "nrqlQueries": [
               {
-                   "accountId": <your-account-id>,
+                   "accountId": 4328019,
                 "query": "SELECT average(sfpowerscripts.build.duration)/1000/60 AS 'Mins' FROM Metric  WHERE stage='build' AND is_diffcheck_enabled='true' SINCE this quarter"
               }
             ],
@@ -360,7 +360,7 @@
             },
             "nrqlQueries": [
               {
-                   "accountId": <your-account-id>,
+                   "accountId": 4328019,
                 "query": "SELECT count (sfpowerscripts.build.scheduled) AS 'Scheduled Builds' FROM Metric TIMESERIES"
               }
             ]
@@ -382,7 +382,7 @@
             "dataFormatters": [],
             "nrqlQueries": [
               {
-                   "accountId": <your-account-id>,
+                   "accountId": 4328019,
                 "query": "SELECT average(sfpowerscripts.build.duration)/1000/60 AS 'Mins' FROM Metric  WHERE stage='quickbuild'AND is_diffcheck_enabled='false' SINCE this quarter"
               }
             ],
@@ -405,7 +405,7 @@
             "dataFormatters": [],
             "nrqlQueries": [
               {
-                   "accountId": <your-account-id>,
+                   "accountId": 4328019,
                 "query": "SELECT average(sfpowerscripts.build.duration)/1000/60 AS 'Mins' FROM Metric  WHERE stage='build' AND is_diffcheck_enabled='false' SINCE this quarter"
               }
             ],
@@ -428,7 +428,7 @@
             "dataFormatters": [],
             "nrqlQueries": [
               {
-                   "accountId": <your-account-id>,
+                   "accountId": 4328019,
                 "query": "SELECT count(sfpowerscripts.build.scheduled.packages) AS 'Packages Scheduled' FROM  Metric WHERE is_dependency_validated ='true' SINCE this quarter"
               }
             ],
@@ -451,7 +451,7 @@
             "dataFormatters": [],
             "nrqlQueries": [
               {
-                   "accountId": <your-account-id>,
+                   "accountId": 4328019,
                 "query": "SELECT count(sfpowerscripts.build.succeeded.packages) AS 'Packages Succeeded' FROM  Metric WHERE is_dependency_validated ='true' SINCE this quarter"
               }
             ],
@@ -474,7 +474,7 @@
             "dataFormatters": [],
             "nrqlQueries": [
               {
-                   "accountId": <your-account-id>,
+                   "accountId": 4328019,
                 "query": "SELECT 100-(count(sfpowerscripts.build.succeeded.failed)/(count(sfpowerscripts.build.succeeded.packages)+count(sfpowerscripts.build.failed.packages))) AS '%' FROM  Metric WHERE is_dependency_validated ='true' SINCE this quarter"
               }
             ],
@@ -506,7 +506,7 @@
             },
             "nrqlQueries": [
               {
-                   "accountId": <your-account-id>,
+                   "accountId": 4328019,
                 "query": "SELECT  AVERAGE(sfpowerscripts.package.installation.elapsed_time)/1000/60 AS 'Avg.Mins' , MAX(sfpowerscripts.package.installation.elapsed_time)/1000/60 As 'Max Mins' FROM Metric FACET package WHERE type='unlocked'SINCE this quarter"
               }
             ]
@@ -533,7 +533,7 @@
             },
             "nrqlQueries": [
               {
-                   "accountId": <your-account-id>,
+                   "accountId": 4328019,
                 "query": "SELECT  AVERAGE(sfpowerscripts.package.installation.elapsed_time)/1000/60 AS 'Avg.Mins' , MAX(sfpowerscripts.package.installation.elapsed_time)/1000/60 As 'Max Mins' FROM Metric FACET package WHERE type='source' SINCE this quarter"
               }
             ]
@@ -560,7 +560,7 @@
             },
             "nrqlQueries": [
               {
-                   "accountId": <your-account-id>,
+                   "accountId": 4328019,
                 "query": "SELECT  AVERAGE(sfpowerscripts.package.installation.elapsed_time)/1000/60 AS 'Avg.Mins' , MAX(sfpowerscripts.package.installation.elapsed_time)/1000/60 As 'Max Mins' FROM Metric FACET package WHERE type='data' SINCE this quarter"
               }
             ]
@@ -587,7 +587,7 @@
             },
             "nrqlQueries": [
               {
-                   "accountId": <your-account-id>,
+                   "accountId": 4328019,
                 "query": "FROM Metric SELECT count(sfpowerscripts.package.installation.failure) FACET package LIMIT 10 SINCE this quarter"
               }
             ]
@@ -612,7 +612,7 @@
             },
             "nrqlQueries": [
               {
-                   "accountId": <your-account-id>,
+                   "accountId": 4328019,
                 "query": "FROM Metric SELECT sum(sfpowerscripts.apextests.triggered) FACET package WHERE test_result='false' LIMIT 10 SINCE this quarter"
               }
             ]
@@ -637,7 +637,7 @@
             },
             "nrqlQueries": [
               {
-                   "accountId": <your-account-id>,
+                   "accountId": 4328019,
                 "query": "SELECT  AVERAGE(sfpowerscripts.package.elapsed.time)/1000/60 AS 'Avg.Mins' , MAX(sfpowerscripts.package.elapsed.time)/1000/60 As 'Max Mins' FROM Metric FACET package WHERE type='unlocked' AND is_dependency_validated='true'SINCE this quarter"
               }
             ]
@@ -664,7 +664,7 @@
             },
             "nrqlQueries": [
               {
-                   "accountId": <your-account-id>,
+                   "accountId": 4328019,
                 "query": "FROM Metric SELECT COUNT(sfpowerscripts.build.failed.packages) FACET package  LIMIT 10 SINCE this quarter"
               }
             ]
@@ -689,7 +689,7 @@
             },
             "nrqlQueries": [
               {
-                   "accountId": <your-account-id>,
+                   "accountId": 4328019,
                 "query": "FROM Metric SELECT count(sfpowerscripts.build.scheduled.packages) FACET package LIMIT 10 SINCE this quarter"
               }
             ]
@@ -720,7 +720,7 @@
             },
             "nrqlQueries": [
               {
-                   "accountId": <your-account-id>,
+                   "accountId": 4328019,
                 "query": "FROM Metric SELECT sum(sfpowerscripts.release.scheduled) AS 'Release Scheduled', sum(sfpowerscripts.release.succeeded) AS 'Release Succeeded',sum(sfpowerscripts.release.failed) AS 'Release Failed', sum(sfpowerscripts.release.packages.scheduled) AS 'Packages Scheduled for Release',  sum(sfpowerscripts.release.packages.succeeded) AS 'Packages Succeeded for Release', sum(sfpowerscripts.release.packages.failed) AS 'Packages Failed for Release',(sum(sfpowerscripts.release.succeeded)/sum(sfpowerscripts.release.scheduled))*100 AS 'Success Ratio %'  FACET targetOrg SINCE this quarter"
               }
             ]
@@ -750,7 +750,7 @@
             },
             "nrqlQueries": [
               {
-                   "accountId": <your-account-id>,
+                   "accountId": 4328019,
                 "query": "SELECT latest(`sfpowerscripts.pool.available`) FROM Metric FACET poolName "
               }
             ]
@@ -774,7 +774,7 @@
             },
             "nrqlQueries": [
               {
-                   "accountId": <your-account-id>,
+                   "accountId": 4328019,
                 "query": "SELECT latest(`sfpowerscripts.pool.inuse`) FROM Metric FACET poolName "
               }
             ]
@@ -798,7 +798,7 @@
             },
             "nrqlQueries": [
               {
-                   "accountId": <your-account-id>,
+                   "accountId": 4328019,
                 "query": "SELECT latest(`sfpowerscripts.pool.provisioning`) FROM Metric FACET poolName "
               }
             ]
@@ -822,7 +822,7 @@
             },
             "nrqlQueries": [
               {
-                   "accountId": <your-account-id>,
+                   "accountId": 4328019,
                 "query": "SELECT latest(`sfpowerscripts.prepare.duration`)/1000/60/60 AS 'Hours' FROM Metric FACET poolName SINCE this quarter"
               }
             ]
@@ -844,7 +844,7 @@
             "dataFormatters": [],
             "nrqlQueries": [
               {
-                   "accountId": <your-account-id>,
+                   "accountId": 4328019,
                 "query": "SELECT latest(`sfpowerscripts.pool.footprint`) AS `Scratch Org Footprint` FROM Metric "
               }
             ],
@@ -867,7 +867,7 @@
             "dataFormatters": [],
             "nrqlQueries": [
               {
-                   "accountId": <your-account-id>,
+                   "accountId": 4328019,
                 "query": "SELECT latest(`sfpowerscripts.scratchorgs.active.remaining`) AS `Remaining Active ScratchOrgs` FROM Metric "
               }
             ],
@@ -890,7 +890,7 @@
             "dataFormatters": [],
             "nrqlQueries": [
               {
-                   "accountId": <your-account-id>,
+                   "accountId": 4328019,
                 "query": "SELECT latest(`sfpowerscripts.scratchorgs.daily.remaining`) AS `Remaining Daily ScratchOrgs` FROM Metric "
               }
             ],
