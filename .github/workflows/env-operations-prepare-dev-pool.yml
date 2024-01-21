@@ -23,7 +23,7 @@ on:
 
 
 #Set the environment variables for tracking metrics
-#env:
+env:
   #SFPOWERSCRIPTS_NEWRELIC: 'true'
   #SFPOWERSCRIPTS_NEWRELIC_API_KEY: '${{ secrets.NEWRELIC_INSIGHT_INSERT_KEYS }}'
   SFPOWERSCRIPTS_DATADOG: 'true'
