@@ -9,11 +9,6 @@
     "enableSourceTracking": true,
     "retryOnFailure": true,
     "succeedOnDeploymentErrors": true,
-    "installAll": true,
-    "fetchArtifacts": {
-        "npm": {
-          "scope": "@senthilrajan07"
-        }
-      }
+    "installAll": true
    
 }
