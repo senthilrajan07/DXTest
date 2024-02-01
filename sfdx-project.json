@@ -78,7 +78,7 @@
     "sfdcLoginUrl": "https://login.salesforce.com",
     "sourceApiVersion": "52.0",
     "packageAliases": {
-        "LWCRecipes": "04t3t000002sBACAA2"
+        "LWCRecipes": "04t5c000001Zb6YAAS"
     },
     "plugins": {
     }
